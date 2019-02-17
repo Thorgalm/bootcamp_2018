@@ -10,3 +10,7 @@
 # git status
 # git commit -m "nazwa"
 # git push origin devel
+
+#git branch
+#git checkout devel - przelaczy mnie do branch devel
+#git checkout -b nazwa1 - stworzy branch nazwa2
