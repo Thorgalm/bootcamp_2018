@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista samochodów</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<table class="table table-striped">
+    <thead>
+    <th>Marka</th>
+    <th>Model</th>
+    <th>Rok produkcji</th>
+    <th>Typ nadwozia</th>
+    </thead>
+    <tbody>
+    {% for car in cars %}
+    <tr>
+        <td> <a href="/cars/{{car.id}}">{{car.brand}} </a></td>
+        <td>{{car.model}}</td>
+        <td>{{car.production_year}}</td>
+        <td>{{car.body_type}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    <!--{{cars}}-->
+
+</table>
+</body>
+</html>

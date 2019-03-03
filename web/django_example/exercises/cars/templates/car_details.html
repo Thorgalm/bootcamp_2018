@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Szczegóły samochodu</title>
+</head>
+<body>
+
+<h1>{{car.brand}}</h1>
+<h2>{{car.model}}</h2>
+<h2>Rok produkcji: {{car.production_year}}</h2>
+<h2>Typ nadwozia: {{car.body_type}}</h2>
+<div>
+    {% if car.image %}
+    <img src="{{car.image.url}}" alt="Mazda">
+    {% endif %}
+
+</div>
+
+
+
+
+</body>
+</html>
